@@ -10,9 +10,18 @@
 
 | 章节 | 目录 | 说明 |
 |------|------|------|
-| Chapter 3 | [chapter_3/](chapter_3/) | 第三章学习内容 |
-| Chapter 4 | [chapter_4/](chapter_4/) | 第四章学习内容 |
-| Chapter 5 | [chapter_5/](chapter_5/) | 第五章学习内容 |
+| Chapter 3 | [chapter_3/](chapter_3/) | 第三章Flutter项目 |
+| Chapter 4 | [chapter_4/](chapter_4/) | 第四章Flutter项目 |
+| Chapter 5 | [chapter_5/](chapter_5/) | 第五章Flutter项目 |
+
+## 运行项目
+
+每个章节都是独立的Flutter项目，进入对应目录运行：
+
+```bash
+cd chapter_3
+flutter run
+```
 
 ## 学习资源
 
