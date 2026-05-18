@@ -1,19 +1,17 @@
-# Chapter 5 - 第五章
+# chapter_5
 
-> 📚 参考教材：[《Flutter实战》第五章](https://book.flutterchina.club/)
+A new Flutter project.
 
-## 本章学习目标
+## Getting Started
 
-<!-- 在这里记录本章的学习目标 -->
+This project is a starting point for a Flutter application.
 
-## 学习笔记
+A few resources to get you started if this is your first Flutter project:
 
-<!-- 在这里记录本章的学习笔记 -->
+- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
+- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
 
-## 代码练习
-
-<!-- 在这里记录本章的代码练习 -->
-
-## 遇到的问题
-
-<!-- 在这里记录学习过程中遇到的问题 -->
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
