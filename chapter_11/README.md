@@ -20,14 +20,15 @@
 
 ```
 lib/
-├── main.dart                 # 主入口，导航页面
+├── main.dart                     # 主入口，导航页面
 └── pages/
     ├── file_operation_page.dart    # 11.1 文件操作
     ├── http_client_page.dart       # 11.2 HttpClient
     ├── dio_page.dart               # 11.3 Dio http库
     ├── chunked_download_page.dart  # 11.4 分块下载器
     ├── socket_page.dart            # 11.5 Socket请求
-    └── json_model_page.dart        # 11.6 JSON转Model
+    ├── json_model_page.dart        # 11.6 JSON转Model
+    └── extended_counter_page.dart  # 扩展功能：持久化计数器
 ```
 
 ## 11.1 文件操作
@@ -144,6 +145,42 @@ factory User.fromJson(Map<String, dynamic> json) {
 ### 截图展示
 
 ![JSON转Model](screenshots/11.6.png)
+
+## 扩展功能：持久化计数器
+
+### 知识点说明
+
+- **数据持久化**：将计数器值保存到本地文件
+- **path_provider**：获取应用文档目录路径
+- **文件读写**：使用dart:io进行文件操作
+- **生命周期**：在initState中读取文件，在操作时写入文件
+
+### 核心代码
+
+```dart
+Future<File> _getLocalFile() async {
+  String dir = (await getApplicationDocumentsDirectory()).path;
+  return File('$dir/counter.txt');
+}
+
+Future<int> _readCounter() async {
+  try {
+    File file = await _getLocalFile();
+    return int.parse(await file.readAsString());
+  } on FileSystemException {
+    return 0;
+  }
+}
+
+Future<void> _incrementCounter() async {
+  setState(() => _counter++);
+  await (await _getLocalFile()).writeAsString('$_counter');
+}
+```
+
+### 截图展示
+
+![持久化计数器](screenshots/11.7.png)
 
 ## 快速开始
 

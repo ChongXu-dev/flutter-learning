@@ -5,6 +5,7 @@ import 'pages/dio_page.dart';
 import 'pages/chunked_download_page.dart';
 import 'pages/socket_page.dart';
 import 'pages/json_model_page.dart';
+import 'pages/extended_counter_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         '/chunked-download': (context) => const ChunkedDownloadPage(),
         '/socket': (context) => const SocketPage(),
         '/json-model': (context) => const JsonModelPage(),
+        '/extended-counter': (context) => const ExtendedCounterPage(),
       },
     );
   }
@@ -74,6 +76,12 @@ class HomePage extends StatelessWidget {
       'description': 'JSON解析与Dart Model转换',
       'route': '/json-model',
       'color': Colors.teal,
+    },
+    {
+      'title': '扩展功能：持久化计数器',
+      'description': '基于文件操作的计数器数据持久化',
+      'route': '/extended-counter',
+      'color': Colors.indigo,
     },
   ];
 
