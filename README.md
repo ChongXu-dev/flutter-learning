@@ -8,11 +8,13 @@
 
 ## 章节目录
 
-| 章节 | 目录 | 说明 |
-|------|------|------|
-| Chapter 3 | [chapter_3/](chapter_3/) | 第三章Flutter项目 |
-| Chapter 4 | [chapter_4/](chapter_4/) | 第四章Flutter项目 |
-| Chapter 5 | [chapter_5/](chapter_5/) | 第五章Flutter项目 |
+| 章节 | 目录 | README | 说明 |
+|------|------|--------|------|
+| Chapter 3 | [chapter_3/](chapter_3/) | [📖](chapter_3/README.md) | 第三章 - Widget基础 |
+| Chapter 4 | [chapter_4/](chapter_4/) | [📖](chapter_4/README.md) | 第四章 - 布局组件 |
+| Chapter 5 | [chapter_5/](chapter_5/) | [📖](chapter_5/README.md) | 第五章 - 容器组件 |
+| Chapter 8 | [chapter_8/](chapter_8/) | [📖](chapter_8/README.md) | 第八章 - 事件处理与通知 |
+| Chapter 11 | [chapter_11/](chapter_11/) | [📖](chapter_11/README.md) | 第十一章 - 文件操作与网络请求 |
 
 ## 运行项目
 
